@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+  head
+    title Users Page
+  body
+    header
+      h1 Users List
+    div
+      //- a(href="/users/new") New User 
+      p Here you can view the list of our users from the database system.
+    main
+      if users && users.length > 0
+        ul
+          each user in users
+            li= user.name + ' - ' + user.email
+      else
+        p No users found.
+    footer(class="footer")
+      p © 2025 Mike -- the software backend developer.
+    script. 
+      console.log('Users page script loaded');
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      header, footer {
+        text-align: center;
+        padding: 2em;
+        background-color: #007bff;
+        color: white;
+        border-radius: 3em;
+      }
+      p {
+        font-size: 1.2em;
+        text-align: center;
+        color: #555;
+        font-weight: bold;
+      }
+      main {
+        padding: 2em;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        padding: 0.5em;
+        border-bottom: 1px solid #ccc;
+      }
+      footer {
+        margin-top: 2em;
+        font-size: 0.8em;
+      }
+      footer p {
+        color: #fff;
+      }
