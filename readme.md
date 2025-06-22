@@ -69,7 +69,7 @@ Build a basic form in Pug to add a new user, with server-side rendering and vali
 | Route         | Description                     |
 |---------------|---------------------------------|
 | `GET /users`  | Show list of users              |
-| `GET /users/new` | Show user creation form    |
+| `GET /users/new` | Show user creation form      |
 | `POST /users` | Add a new user and redirect     |
 
 ---
