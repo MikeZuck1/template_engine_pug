@@ -39,7 +39,7 @@ Build a basic form in Pug to add a new user, with server-side rendering and vali
 ### 🛠 Instructions
 
 1. **Create a `GET /users/new` route**:
-   - It renders a Pug view with a form containing the following fields:  
+   - It renders a Pug view with a form containing the following fields:
      `name`, `email`, and `age`.
 
 2. **Create a `POST /users` route**:

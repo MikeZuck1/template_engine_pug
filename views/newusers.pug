@@ -1,0 +1,14 @@
+html
+  head 
+    title New Users
+  body
+    h1 welcome to the New Users Page
+    form(action='/add_movie', method='POST')
+    p
+      | name: 
+      input(type='text', name='title', value='')
+      |          email: 
+      input(type='text', name='year', value='')
+      |          age: 
+      input(type='text', name='imdb', value='')
+    input(type='submit', value='Submit')
