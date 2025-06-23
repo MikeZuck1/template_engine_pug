@@ -16,7 +16,7 @@ app.get("/users", (req, res) => {
 });
 
 app.use((req, res) => {
-  res.status(404).send("Not Found");
+  res.status(404).send("not found");
 });
 
 app.listen(3000);
