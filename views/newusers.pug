@@ -1,14 +1,53 @@
-html
+doctype html
+html(lang="en")
   head 
     title New Users
   body
     h1 welcome to the New Users Page
-    form(action='/add_movie', method='POST')
-    p
-      | name: 
-      input(type='text', name='title', value='')
-      |          email: 
-      input(type='text', name='year', value='')
-      |          age: 
-      input(type='text', name='imdb', value='')
-    input(type='submit', value='Submit')
+    p.paraph-instruction Fill this form if you to be add to our system database.
+    .container
+     form(method='POST', action='/users')
+      p
+        | name: 
+        input(type='text', name='name')
+        | email:
+        input(type='text', name='email')
+        | age: 
+        input(type='text', name='age')
+      input(type='submit', value='Submit', class='submit-input')
+
+    style.  
+     body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+     }
+     h1 {
+      text-align: center;
+     }
+     .paraph-instruction {
+      text-align: center;
+     }
+     .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      height: 200px;
+      margin: 0 auto;
+     }
+     input {
+      display: flex;
+      flex-direction: column;
+      width: 35em;
+      margin: .5em;
+      padding: .5em;
+      border-radius: 3px;
+      border: 0;
+     }
+     .submit-input {
+      margin-top: 2px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: #fff;
+     }
