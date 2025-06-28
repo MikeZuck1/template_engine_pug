@@ -4,15 +4,15 @@ html(lang="en")
     title Users Page
   body
     header
-      h1 Users List
+      h1 New users List
     div
       //- a(href="/users/new") New User 
-      p Here you can view the list of our users from the database system.
+      p Here you can view the list of our new users subscribed on our database system.
     main
       if users && users.length > 0
         ul
           each user in users
-            li= user.name + ' - ' + user.email
+            li= 'Nom : ' + user.name + ' -- Mail : ' + user.email + ' -- age : ' + user.age + ' ans'
       else
         p No users found.
     footer(class="footer")
