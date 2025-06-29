@@ -27,6 +27,10 @@ app.get("/users", (req, res) => {
   return res.status(200).render("users", { users });
 });
 
+app.get(['/foo', '/toto', '/tata'], (req, res) => {
+  res.send("<h1>path is working...</h1>");
+});
+
 app.use((req, res) => {
   return res.status(404).send("not found");
 });

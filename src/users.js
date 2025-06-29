@@ -4,7 +4,6 @@ const path = require("path");
 const users = require("./data/users.json");
 
 app.set("view engine", "pug");
-
 app.set("views", path.join(__dirname, "../views"));
 
 app.get("/", (req, res) => {
