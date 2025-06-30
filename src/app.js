@@ -37,7 +37,7 @@ app.param("userId", (req, res, next, value, name) => {
   next();
 });
 
-app.get("/checkout/:userId/:userCompany", (req, res) => {
+app.get("/checkout/:userId/:companyId", (req, res) => {
   res.status(200).send("<h1>disconnected...</h1>");
 });
 
