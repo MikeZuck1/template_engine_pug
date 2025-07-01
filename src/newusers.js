@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
-let users = [];
+let users = []; // array -- empty
 
 app.use(express.urlencoded({ extended: true }));
 
